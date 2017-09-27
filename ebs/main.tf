@@ -20,7 +20,7 @@ module "ami" {
     architecture = "${var.architecture}"
     virttype = "${module.virttype.prefer_hvm}"
     storagetype = "${var.storagetype}"
-    source = "../"
+    source = "github.com/madebymany/tf_aws_ubuntu_ami"
 }
 
 output "ami_id" {
